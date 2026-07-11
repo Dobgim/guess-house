@@ -308,8 +308,8 @@ export const CONTACT_DETAILS = {
   address: '12 Rue de Bonamussadi, Opposite Douala Mall',
   city: 'Bonamussadi, Douala',
   country: 'Cameroon',
-  phone: '+237 670 123 456',
-  whatsapp: 'https://wa.me/237670123456?text=Hello%20M%26J%20Luxurious%20Apartment%2C%20I%27d%20like%20to%20inquire%20about%20booking%20an%20apartment.',
+  phone: '+237 679 554 114',
+  whatsapp: 'https://wa.me/237679554114?text=Hello%20La%20Villa%20Rielle%20Guest%20House%2C%20I%27d%20like%20to%20inquire%20about%20booking%20an%20apartment.',
   email: 'reservations@mjluxuriousapartment.com',
   workingHours: 'Front Desk: 24/7 | Reservations Office: 8:00 AM - 8:00 PM',
 };

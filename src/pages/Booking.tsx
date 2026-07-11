@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Check, ChevronRight, Calendar, User, CreditCard, Download, Star, BedDouble, Users } from 'lucide-react';
+import { Check, ChevronRight, Calendar, User, CreditCard, Download, Star, BedDouble, Users, Settings, Info, Mail, AlertCircle } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { useBooking } from '../context/BookingContext';
 import type { Booking as BookingRecord } from '../context/BookingContext';
 import { ROOMS } from '../data/mockData';
+import { sendBookingReceiptEmail } from '../services/emailService';
+import { IntegrationsPanel } from '../components/IntegrationsPanel';
 
 const STEPS = ['Select Apartment', 'Guest Details', 'Payment', 'Confirmation'];
 
@@ -19,6 +21,9 @@ export const Booking: React.FC = () => {
   const [step, setStep] = useState(0);
   const [processing, setProcessing] = useState(false);
   const [confirmedBooking, setConfirmedBooking] = useState<BookingRecord | null>(null);
+  const [isIntegrationsOpen, setIsIntegrationsOpen] = useState(false);
+  const [emailStatus, setEmailStatus] = useState<'IDLE' | 'SENDING' | 'SENT' | 'SIMULATED' | 'FAILED'>('IDLE');
+  
   const {
     checkIn, checkOut, guests, selectedRoom, billingDetails,
     setSearchParams, selectRoom, updateBillingDetails, createBooking, clearCart
@@ -33,10 +38,25 @@ export const Booking: React.FC = () => {
     setProcessing(true);
     // Simulate payment delay
     await new Promise((r) => setTimeout(r, 2200));
-    const booking = await createBooking();
-    setConfirmedBooking(booking);
-    setProcessing(false);
-    setStep(3);
+    try {
+      const booking = await createBooking();
+      setConfirmedBooking(booking);
+      
+      // Trigger automated email sending
+      setEmailStatus('SENDING');
+      const emailResult = await sendBookingReceiptEmail(booking);
+      if (emailResult.success) {
+        setEmailStatus('SENT');
+      } else {
+        setEmailStatus('SIMULATED');
+      }
+    } catch (e) {
+      console.error('Payment/Booking confirmation error', e);
+      setEmailStatus('FAILED');
+    } finally {
+      setProcessing(false);
+      setStep(3);
+    }
   };
 
   const handlePrint = () => window.print();
@@ -44,9 +64,16 @@ export const Booking: React.FC = () => {
   return (
     <Layout>
       {/* Header */}
-      <section id="booking-header" className="bg-charcoal pt-10 pb-12 text-center">
+      <section id="booking-header" className="bg-charcoal pt-10 pb-12 text-center relative px-4">
         <h1 className="font-serif text-4xl font-semibold text-cream-light mb-2">Reserve Your Apartment</h1>
         <p className="text-cream-dark/60 text-sm">Complete your booking in just 3 simple steps</p>
+        <button
+          onClick={() => setIsIntegrationsOpen(true)}
+          className="absolute top-4 right-4 bg-gold/10 hover:bg-gold/25 border border-gold/30 text-gold hover:text-cream-light px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm"
+        >
+          <Settings className="w-3.5 h-3.5" />
+          <span>Automated Settings</span>
+        </button>
       </section>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -250,9 +277,61 @@ export const Booking: React.FC = () => {
                   <Check className="w-10 h-10 text-gold" />
                 </div>
                 <h2 className="font-serif text-3xl font-semibold text-charcoal mb-2">Booking Confirmed!</h2>
-                <p className="text-charcoal-light mb-8 text-sm">
-                  Thank you, <strong>{confirmedBooking.guestDetails.fullName}</strong>. Your reservation is confirmed and a receipt has been sent to {confirmedBooking.guestDetails.email}.
+                <p className="text-charcoal-light mb-4 text-sm">
+                  Thank you, <strong>{confirmedBooking.guestDetails.fullName}</strong>. Your reservation is confirmed.
                 </p>
+
+                {/* Email Delivery Status Banner */}
+                <div className="mb-8">
+                  {emailStatus === 'SENDING' && (
+                    <div className="max-w-md mx-auto p-3 bg-blue-50/50 border border-blue-200 rounded-xl text-xs text-blue-800 flex items-center justify-center gap-2">
+                      <div className="w-3.5 h-3.5 border-2 border-blue-800/30 border-t-blue-800 rounded-full animate-spin shrink-0" />
+                      <span>Sending automated receipt email to {confirmedBooking.guestDetails.email}...</span>
+                    </div>
+                  )}
+                  {emailStatus === 'SENT' && (
+                    <div className="max-w-md mx-auto p-3 bg-green-50 border border-green-200 rounded-xl text-xs text-green-800 flex items-center justify-center gap-2">
+                      <Check className="w-4 h-4 text-green-600 shrink-0" />
+                      <span>✓ Automated payment receipt sent successfully to <strong>{confirmedBooking.guestDetails.email}</strong>!</span>
+                    </div>
+                  )}
+                  {emailStatus === 'SIMULATED' && (
+                    <div className="max-w-md mx-auto p-3.5 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-800 flex flex-col items-center gap-2">
+                      <div className="flex items-center gap-1.5 font-bold">
+                        <Info className="w-4 h-4 text-amber-600 shrink-0" />
+                        <span>Receipt Simulated (EmailJS Inactive)</span>
+                      </div>
+                      <p className="opacity-90 leading-relaxed">
+                        The email receipt was simulated in the developer console. To send a real receipt, click the button below to configure your free EmailJS credentials.
+                      </p>
+                      <button 
+                        onClick={() => setIsIntegrationsOpen(true)}
+                        className="text-[10px] text-amber-900 bg-amber-100 hover:bg-amber-200 font-bold px-3 py-1.5 rounded-lg border border-amber-200 transition-all flex items-center gap-1"
+                      >
+                        <Settings className="w-3 h-3 animate-spin-slow" />
+                        <span>Setup Live Receipts</span>
+                      </button>
+                    </div>
+                  )}
+                  {emailStatus === 'FAILED' && (
+                    <div className="max-w-md mx-auto p-3.5 bg-red-50 border border-red-200 rounded-2xl text-xs text-red-800 flex flex-col items-center gap-2">
+                      <div className="flex items-center gap-1.5 font-bold">
+                        <AlertCircle className="w-4 h-4 text-red-600 shrink-0" />
+                        <span>Email Delivery Failed</span>
+                      </div>
+                      <p className="opacity-90">
+                        Check your EmailJS credentials or template configuration.
+                      </p>
+                      <button 
+                        onClick={() => setIsIntegrationsOpen(true)}
+                        className="text-[10px] text-red-900 bg-red-100 hover:bg-red-200 font-bold px-3 py-1.5 rounded-lg border border-red-200 transition-all flex items-center gap-1"
+                      >
+                        <Settings className="w-3 h-3" />
+                        <span>Fix Credentials</span>
+                      </button>
+                    </div>
+                  )}
+                </div>
 
                 {/* Booking ID Card */}
                 <div className="bg-cream-light border-2 border-dashed border-gold/30 rounded-2xl p-6 mb-8 text-left">
@@ -349,6 +428,7 @@ export const Booking: React.FC = () => {
           )}
         </div>
       </div>
+      <IntegrationsPanel isOpen={isIntegrationsOpen} onClose={() => setIsIntegrationsOpen(false)} />
     </Layout>
   );
 };
