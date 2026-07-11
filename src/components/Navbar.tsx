@@ -52,15 +52,22 @@ export const Navbar: React.FC = () => {
           <Link
             id="nav-logo"
             to="/"
-            className="flex flex-col items-start focus:outline-none"
+            className="flex items-center gap-3 focus:outline-none"
             onClick={() => setIsOpen(false)}
           >
-            <span className="font-serif text-2xl font-semibold tracking-wider text-charcoal">
-              M&J <span className="text-gold">LUXURIOUS</span>
-            </span>
-            <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-              Apartment
-            </span>
+            <img 
+              src="/logo.png" 
+              alt="M&J Apartments Logo" 
+              className="h-10 w-10 rounded-full border border-gold/30 object-cover shadow-sm bg-white" 
+            />
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-xl font-bold tracking-wider text-charcoal leading-none">
+                M&J <span className="text-gold">LUXURIOUS</span>
+              </span>
+              <span className="text-[9px] tracking-[0.25em] text-sage font-semibold uppercase mt-0.5">
+                Apartment
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -133,9 +140,21 @@ export const Navbar: React.FC = () => {
         }`}
       >
         <div className="flex items-center justify-between border-b border-gold/15 pb-4 mb-6">
-          <span className="font-serif text-xl font-semibold tracking-wider text-charcoal">
-            M&J <span className="text-gold">LUXURIOUS</span>
-          </span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="/logo.png" 
+              alt="M&J Apartments Logo" 
+              className="h-9 w-9 rounded-full border border-gold/30 object-cover shadow-sm bg-white" 
+            />
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-lg font-bold tracking-wider text-charcoal leading-none">
+                M&J <span className="text-gold">LUXURIOUS</span>
+              </span>
+              <span className="text-[8px] tracking-[0.2em] text-sage font-semibold uppercase mt-0.5">
+                Apartment
+              </span>
+            </div>
+          </div>
           <button
             id="mobile-drawer-close"
             onClick={() => setIsOpen(false)}

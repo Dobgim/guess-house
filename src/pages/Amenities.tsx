@@ -47,7 +47,7 @@ export const Amenities: React.FC = () => (
         <div className="mt-12 bg-charcoal rounded-2xl p-6 text-center border border-gold/20">
           <p className="text-gold font-serif text-lg font-semibold mb-2">All Amenities Included in Your Stay</p>
           <p className="text-cream-dark/70 text-sm">
-            No hidden charges. Every amenity listed above is complimentary for all guests during their stay at M&J Luxurious Guest House.
+            No hidden charges. Every amenity listed above is complimentary for all guests during their stay at M&J Luxurious Apartment.
           </p>
         </div>
       </div>

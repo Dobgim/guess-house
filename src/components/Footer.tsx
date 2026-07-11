@@ -22,13 +22,20 @@ export const Footer: React.FC = () => {
           
           {/* Brand Column */}
           <div className="flex flex-col space-y-4">
-            <Link to="/" className="flex flex-col focus:outline-none">
-              <span className="font-serif text-2xl font-semibold tracking-wider text-cream-light">
-                M&J <span className="text-gold">LUXURIOUS</span>
-              </span>
-              <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-                Apartment
-              </span>
+            <Link to="/" className="flex items-center gap-3 focus:outline-none">
+              <img 
+                src="/logo.png" 
+                alt="M&J Apartments Logo" 
+                className="h-12 w-12 rounded-full border border-gold/30 object-cover shadow-sm bg-white" 
+              />
+              <div className="flex flex-col items-start">
+                <span className="font-serif text-xl font-bold tracking-wider text-cream-light leading-none">
+                  M&J <span className="text-gold">LUXURIOUS</span>
+                </span>
+                <span className="text-[9px] tracking-[0.25em] text-sage font-semibold uppercase mt-0.5">
+                  Apartment
+                </span>
+              </div>
             </Link>
             <p className="text-sm text-cream-dark/70 leading-relaxed pt-2">
               Located in the prestigious neighborhood of Bonamussadi, Douala, M&J Luxurious Apartment combines modern luxury with premium hospitality. Your sanctuary in Douala.

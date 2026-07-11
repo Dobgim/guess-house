@@ -4,18 +4,18 @@ import { Lightbox } from '../components/Lightbox';
 import { ZoomIn } from 'lucide-react';
 
 const GALLERY_ITEMS = [
-  { id: '1', label: 'Executive Wouri Penthouse — Living Area', category: 'Suites', gradient: 'from-stone-700 to-stone-900' },
-  { id: '2', label: 'Penthouse Private Terrace & River View', category: 'Views', gradient: 'from-slate-700 to-slate-900' },
-  { id: '3', label: 'Sage Garden Suite — Garden Access Doors', category: 'Suites', gradient: 'from-emerald-800 to-emerald-950' },
-  { id: '4', label: 'Tropical Garden & Seating Area', category: 'Gardens', gradient: 'from-green-800 to-green-950' },
-  { id: '5', label: 'Deluxe Wouri Studio — Kitchen & Desk', category: 'Suites', gradient: 'from-amber-800 to-amber-950' },
-  { id: '6', label: 'Classic Queen Room — Courtyard View', category: 'Suites', gradient: 'from-yellow-700 to-yellow-900' },
-  { id: '7', label: 'Wouri River Sunrise from Penthouse Terrace', category: 'Views', gradient: 'from-purple-800 to-purple-950' },
-  { id: '8', label: 'Courtyard Fountain & Cobblestone Pathway', category: 'Common Areas', gradient: 'from-rose-700 to-rose-900' },
-  { id: '9', label: 'Sunset View Double — Beds & Decor', category: 'Suites', gradient: 'from-orange-700 to-orange-900' },
-  { id: '10', label: 'Reception & Welcome Lobby', category: 'Common Areas', gradient: 'from-teal-800 to-teal-950' },
-  { id: '11', label: 'Breakfast Lounge — Morning Setup', category: 'Dining', gradient: 'from-lime-700 to-lime-900' },
-  { id: '12', label: 'Royal Twin Suite — Living Room', category: 'Suites', gradient: 'from-indigo-700 to-indigo-900' },
+  { id: '1', label: 'VIP Apartment — Living Area', category: 'Apartments', gradient: 'from-stone-700 to-stone-900' },
+  { id: '2', label: 'Apartment Balcony City View', category: 'Views', gradient: 'from-slate-700 to-slate-900' },
+  { id: '3', label: '1st Floor Apartment — Sleeping Area', category: 'Apartments', gradient: 'from-emerald-800 to-emerald-950' },
+  { id: '4', label: 'Secure On-Site Parking & Entrance', category: 'Common Areas', gradient: 'from-green-800 to-green-950' },
+  { id: '5', label: '2nd Floor Apartment Kitchenette', category: 'Apartments', gradient: 'from-amber-800 to-amber-950' },
+  { id: '6', label: 'Classic Queen Bed Setup', category: 'Apartments', gradient: 'from-yellow-700 to-yellow-900' },
+  { id: '7', label: 'City Skyline View from 3rd Floor', category: 'Views', gradient: 'from-purple-800 to-purple-950' },
+  { id: '8', label: 'Reception Desk & Main Lobby', category: 'Common Areas', gradient: 'from-rose-700 to-rose-900' },
+  { id: '9', label: 'Sunset View Double Bed Apartment', category: 'Apartments', gradient: 'from-orange-700 to-orange-900' },
+  { id: '10', label: 'Building Exterior & Facade', category: 'Common Areas', gradient: 'from-teal-800 to-teal-950' },
+  { id: '11', label: 'Main Lobby Seating Area', category: 'Common Areas', gradient: 'from-lime-700 to-lime-900' },
+  { id: '12', label: 'Royal Apartment Seating Area', category: 'Apartments', gradient: 'from-indigo-700 to-indigo-900' },
 ];
 
 const CATEGORIES = ['All', 'Apartments', 'Views', 'Common Areas'];

@@ -169,7 +169,7 @@ export const ROOMS: Room[] = [
     name: 'VIP Apartment',
     slug: 'vip-apartment',
     description: 'Our finest offering. A luxuriously spacious VIP apartment with premium furnishings, exclusive amenities, and top-tier privacy.',
-    detailedDescription: 'The VIP Apartment at M&J Luxurious Guest House is our most exclusive unit. Featuring a king-sized premium bed, a large private bathroom with soaking tub, a fully equipped kitchenette, a separate lounge area with sofa seating, air conditioning, and ultra-fast Wi-Fi. Designed for guests who expect nothing short of excellence, this apartment offers unmatched comfort and privacy.',
+    detailedDescription: 'The VIP Apartment at M&J Luxurious Apartment is our most exclusive unit. Featuring a king-sized premium bed, a large private bathroom with soaking tub, a fully equipped kitchenette, a separate lounge area with sofa seating, air conditioning, and ultra-fast Wi-Fi. Designed for guests who expect nothing short of excellence, this apartment offers unmatched comfort and privacy.',
     price: 85000,
     capacity: 3,
     size: 65,

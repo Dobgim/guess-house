@@ -36,15 +36,14 @@ export const Home: React.FC = () => {
     <Layout>
       {/* ──── HERO ──── */}
       <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden -mt-20">
-        {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-stone-800 to-sage-dark">
-          <div className="absolute inset-0 opacity-20"
-            style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(197,168,128,0.35) 0%, transparent 60%), radial-gradient(circle at 70% 70%, rgba(96,108,93,0.25) 0%, transparent 55%)' }}
+        {/* Background Image with premium dark overlay */}
+        <div className="absolute inset-0 bg-charcoal">
+          <img 
+            src="/collage.jpg" 
+            alt="M&J Apartments Showcase Collage" 
+            className="w-full h-full object-cover opacity-45 scale-105 select-none pointer-events-none" 
           />
-          {/* Subtle pattern */}
-          <div className="absolute inset-0 opacity-5"
-            style={{ backgroundImage: 'repeating-linear-gradient(45deg, #C5A880 0, #C5A880 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px' }}
-          />
+          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/40 via-charcoal/70 to-charcoal" />
         </div>
 
         {/* Content */}
@@ -151,14 +150,13 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Image Placeholder */}
-            <div className="relative h-80 lg:h-[450px] rounded-2xl overflow-hidden order-2 lg:order-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="font-serif text-cream-light/60 text-3xl italic mb-2">Our Story</p>
-                  <p className="text-gold/60 text-sm">Est. 2024 • Douala, Cameroon</p>
-                </div>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-charcoal/60 to-transparent" />
+            <div className="relative h-80 lg:h-[450px] rounded-2xl overflow-hidden order-2 lg:order-1 border border-gold/15 shadow-xl">
+              <img 
+                src="/collage.jpg" 
+                alt="M&J Apartments Showcase" 
+                className="absolute inset-0 w-full h-full object-cover opacity-75" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
               <div className="absolute bottom-6 left-6 bg-gold/90 text-cream-light px-4 py-2 rounded-xl text-sm font-semibold shadow-lg">
                 Est. 2024 • Douala, Cameroon
               </div>
@@ -302,7 +300,7 @@ export const Home: React.FC = () => {
             Reserve your apartment today and experience the finest hospitality in Douala, Cameroon.
           </p>
           <Link
-            id="cta-book-suite"
+            id="cta-book-apartment"
             to="/rooms"
             className="inline-flex items-center gap-3 bg-charcoal hover:bg-charcoal-dark text-cream-light px-10 py-4 rounded-2xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >

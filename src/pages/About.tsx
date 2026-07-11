@@ -33,10 +33,16 @@ export const About: React.FC = () => (
     <section id="story" className="py-20 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="h-96 rounded-2xl bg-gradient-to-br from-stone-700 to-stone-900 flex items-end p-8 shadow-xl">
-            <div>
-              <p className="font-serif text-cream-light/70 text-2xl italic mb-2">M&J Luxurious Apartment</p>
-              <p className="text-gold text-sm font-medium">Established 2024 · Douala, Cameroon</p>
+          <div className="h-96 rounded-2xl relative overflow-hidden flex items-end p-8 shadow-xl">
+            <img 
+              src="/collage.jpg" 
+              alt="M&J Apartments Collage" 
+              className="absolute inset-0 w-full h-full object-cover opacity-60" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
+            <div className="relative z-10">
+              <p className="font-serif text-cream-light text-2xl italic mb-1">M&J Luxurious Apartment</p>
+              <p className="text-gold text-xs font-semibold uppercase tracking-wider">Established 2024 · Douala, Cameroon</p>
             </div>
           </div>
           <div>
