@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Star, ShieldCheck, Wifi, Zap, Wind, Coffee, ChevronDown, ArrowRight } from 'lucide-react';
+import { Star, ShieldCheck, Wifi, Zap, Wind, ChevronDown, ArrowRight } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { BookingWidget } from '../components/BookingWidget';
 import { RoomCard } from '../components/RoomCard';
@@ -9,8 +9,8 @@ import { ROOMS, REVIEWS, FAQS } from '../data/mockData';
 
 const HERO_STATS = [
   { label: 'Happy Guests', value: '500+' },
-  { label: 'Luxury Suites', value: '6' },
-  { label: 'Years of Excellence', value: '8' },
+  { label: 'Apartments', value: '7' },
+  { label: 'Years of Excellence', value: '2' },
   { label: 'Average Rating', value: '4.8★' },
 ];
 
@@ -19,7 +19,6 @@ const AMENITY_ICONS = [
   { icon: <Zap className="w-7 h-7" />, label: 'Constant Power', desc: 'Auto-switch generator' },
   { icon: <Wind className="w-7 h-7" />, label: 'Air Conditioning', desc: 'Climate controlled' },
   { icon: <ShieldCheck className="w-7 h-7" />, label: '24/7 Security', desc: 'CCTV & guard' },
-  { icon: <Coffee className="w-7 h-7" />, label: 'Free Breakfast', desc: 'Daily continental' },
 ];
 
 const fadeUp = {
@@ -67,7 +66,7 @@ export const Home: React.FC = () => {
             variants={fadeUp}
             className="font-serif text-5xl md:text-7xl font-bold text-cream-light leading-tight mb-4 tracking-tight"
           >
-            M&J Luxurious <span className="text-gold italic">Guest House</span>
+            M&J Luxurious <span className="text-gold italic">Apartment</span>
           </motion.h1>
 
           <motion.p
@@ -77,7 +76,7 @@ export const Home: React.FC = () => {
             variants={fadeUp}
             className="text-cream-dark/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 font-light"
           >
-            A sanctuary of elegance in Bonamussadi. Experience world-class suites, breathtaking Wouri River views, and personalized hospitality — all in the heart of Douala.
+            A sanctuary of elegance in Bonamussadi. Experience self-contained apartments, breathtaking city views, and personalized hospitality — all in the heart of Douala.
           </motion.p>
 
           {/* Booking Widget */}
@@ -124,10 +123,10 @@ export const Home: React.FC = () => {
           <div className="text-center mb-14">
             <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Accommodations</p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-charcoal mb-4">
-              Signature Suites
+              Signature Apartments
             </h2>
             <p className="text-charcoal-light max-w-xl mx-auto leading-relaxed">
-              Each suite is thoughtfully designed to evoke comfort, elegance, and the natural beauty of Littoral Cameroon.
+              Each apartment is thoughtfully designed to evoke comfort, elegance, and the natural beauty of Littoral Cameroon.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
@@ -141,7 +140,7 @@ export const Home: React.FC = () => {
               to="/rooms"
               className="inline-flex items-center gap-2 border border-gold text-gold hover:bg-gold hover:text-cream-light px-8 py-3 rounded-xl font-medium transition-all duration-300"
             >
-              View All Suites <ArrowRight className="w-4 h-4" />
+              View All Apartments <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -156,12 +155,12 @@ export const Home: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
                 <div className="text-center">
                   <p className="font-serif text-cream-light/60 text-3xl italic mb-2">Our Story</p>
-                  <p className="text-gold/60 text-sm">Est. 2018 • Douala, Cameroon</p>
+                  <p className="text-gold/60 text-sm">Est. 2024 • Douala, Cameroon</p>
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-charcoal/60 to-transparent" />
               <div className="absolute bottom-6 left-6 bg-gold/90 text-cream-light px-4 py-2 rounded-xl text-sm font-semibold shadow-lg">
-                Est. 2018 • Douala, Cameroon
+                Est. 2024 • Douala, Cameroon
               </div>
             </div>
             {/* Text */}
@@ -171,7 +170,7 @@ export const Home: React.FC = () => {
                 Where Coastal Luxury Meets <span className="text-gold italic">Timeless Elegance</span>
               </h2>
               <p className="text-cream-dark/75 leading-relaxed mb-4">
-                Opened in 2018 in the prestigious neighborhood of Bonamussadi, M&J Luxurious Guest House was built with one purpose — to provide an authentic premium experience in the heart of Douala, Littoral Cameroon.
+                Opened in 2024 in the prestigious neighborhood of Bonamussadi, M&J Luxurious Apartment was built with one purpose — to provide an authentic premium experience in the heart of Douala, Littoral Cameroon.
               </p>
               <p className="text-cream-dark/75 leading-relaxed mb-8">
                 Each architectural detail, from the handcrafted premium woodwork to the open terraces overlooking the Wouri River, reflects our deep pride in local culture and our commitment to world-class comfort.
@@ -300,14 +299,14 @@ export const Home: React.FC = () => {
             Ready for an Unforgettable Stay?
           </h2>
           <p className="text-cream-light/85 mb-8 text-lg font-light leading-relaxed">
-            Reserve your suite today and experience the finest hospitality in Douala, Cameroon.
+            Reserve your apartment today and experience the finest hospitality in Douala, Cameroon.
           </p>
           <Link
             id="cta-book-suite"
             to="/rooms"
             className="inline-flex items-center gap-3 bg-charcoal hover:bg-charcoal-dark text-cream-light px-10 py-4 rounded-2xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
           >
-            Browse & Book Our Suites
+            Browse & Book Our Apartments
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

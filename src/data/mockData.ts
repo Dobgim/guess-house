@@ -46,123 +46,143 @@ export type FAQ = {
 export const ROOMS: Room[] = [
   {
     id: '1',
-    name: 'Executive Wouri Penthouse',
-    slug: 'executive-wouri-penthouse',
-    description: 'Our crown jewel. A spacious suite on the top floor offering panoramic views of the Wouri River and the city of Douala.',
-    detailedDescription: 'The Executive Wouri Penthouse is designed for travelers who demand absolute elegance and spacious luxury. Located on the highest floor of M&J Luxurious Guest House, it features a private wrap-around terrace looking directly at the Wouri River and Douala skyline. Inside, you will find a king-sized canopy bed, a dedicated office desk, a large private lounge, and an open-concept en-suite bathroom with a freestanding clawfoot soaking tub. Guests also enjoy premium access to our concierge service.',
-    price: 95000,
+    name: 'Apt 101 — 1st Floor Left',
+    slug: 'apt-101-first-floor-left',
+    description: 'Spacious and well-lit apartment on the first floor, left wing. Features a modern kitchenette, comfortable sleeping area, and private bathroom.',
+    detailedDescription: 'Apartment 101 is a comfortable and fully self-contained unit on the ground floor, left side. It comes with a private bathroom, kitchenette with a mini-fridge and microwave, a cozy queen-sized bed, air conditioning, and high-speed Wi-Fi. Perfect for individuals or couples seeking a quiet, self-sufficient stay in Douala.',
+    price: 35000,
     capacity: 2,
-    size: 75,
-    bedType: '1 King Size Canopy',
-    view: 'Wouri River & City Skyline',
-    rating: 4.9,
-    reviewsCount: 24,
-    featured: true,
-    amenities: ['Private Terrace', 'Clawfoot Tub', 'Espresso Machine', 'High-Speed Wi-Fi', 'Smart TV', 'Premium Minibar', '24/7 Room Service', 'Work Station'],
+    size: 30,
+    bedType: '1 Queen Size Bed',
+    view: 'Front Street View',
+    rating: 4.6,
+    reviewsCount: 12,
+    featured: false,
+    amenities: ['Private Bathroom', 'Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'In-room Safe', 'Iron & Board'],
     images: [
-      '/assets/rooms/penthouse-1.jpg',
-      '/assets/rooms/penthouse-2.jpg',
-      '/assets/rooms/penthouse-3.jpg'
+      '/assets/rooms/apt-101-1.jpg',
+      '/assets/rooms/apt-101-2.jpg'
     ]
   },
   {
     id: '2',
-    name: 'Sage Garden Suite',
-    slug: 'sage-garden-suite',
-    description: 'Ground floor luxury with direct access to our manicured botanical gardens. Features private patio seating and tranquil environment.',
-    detailedDescription: 'Immerse yourself in nature in the Sage Garden Suite. Decorated in calm forest and sage hues, this room opens via glass double doors directly onto M&J Luxurious Guest House’s private gardens. It includes a comfortable seating alcove, a queen-sized plush bed, and an outdoor terrace with handcrafted bamboo furniture, ideal for sipping morning tea or evening refreshments in the gentle Douala ocean breeze.',
-    price: 65000,
+    name: 'Apt 102 — 1st Floor Right',
+    slug: 'apt-102-first-floor-right',
+    description: 'Bright and comfortable apartment on the first floor, right wing. Fully furnished with all modern essentials for a pleasant stay.',
+    detailedDescription: 'Apartment 102 sits on the ground floor, right side, offering easy access and natural light throughout the day. The space features a queen-sized bed, en-suite bathroom, kitchenette with mini-fridge and microwave, air conditioning, and fast Wi-Fi. An ideal choice for short or extended business and leisure stays.',
+    price: 35000,
     capacity: 2,
-    size: 45,
-    bedType: '1 Queen Size plush',
-    view: 'Manicured Tropical Gardens',
-    rating: 4.8,
-    reviewsCount: 18,
-    featured: true,
-    amenities: ['Direct Garden Access', 'Private Patio', 'Plush Robes', 'High-Speed Wi-Fi', 'Smart TV', 'Coffee & Tea Setup', 'Walk-in Shower', 'In-room Safe'],
+    size: 30,
+    bedType: '1 Queen Size Bed',
+    view: 'Side Garden View',
+    rating: 4.6,
+    reviewsCount: 9,
+    featured: false,
+    amenities: ['Private Bathroom', 'Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'In-room Safe', 'Iron & Board'],
     images: [
-      '/assets/rooms/garden-1.jpg',
-      '/assets/rooms/garden-2.jpg'
+      '/assets/rooms/apt-102-1.jpg',
+      '/assets/rooms/apt-102-2.jpg'
     ]
   },
   {
     id: '3',
-    name: 'Deluxe Wouri Studio',
-    slug: 'deluxe-wouri-studio',
-    description: 'Comfort meets functionality. Equipped with a modern kitchenette, suitable for extended stays and business travelers.',
-    detailedDescription: 'The Deluxe Wouri Studio is perfect for business professionals or couples planning a longer stay. It contains a fully functional, modern kitchenette with an induction stove, microwave, and mini-fridge. The open-plan space includes a queen bed, a high-top dining/work counter, and large windows that frame the scenic views of the Wouri River. Rest easy with premium soundproofing and black-out drapery.',
-    price: 50000,
+    name: 'Apt 201 — 2nd Floor Left',
+    slug: 'apt-201-second-floor-left',
+    description: 'Elevated apartment on the second floor, left wing. Enjoy more privacy and a slightly elevated view of the neighborhood.',
+    detailedDescription: 'Apartment 201 offers a refined second-floor experience with a cozy queen-sized bed, private bathroom, kitchenette, air conditioning, and fast Wi-Fi. The elevated position offers more privacy and a pleasant view of the street below. Ideal for travelers who appreciate calm and comfort.',
+    price: 40000,
     capacity: 2,
-    size: 38,
+    size: 32,
     bedType: '1 Queen Size Bed',
-    view: 'Wouri River Skyline',
+    view: 'Elevated Street View',
     rating: 4.7,
-    reviewsCount: 15,
+    reviewsCount: 14,
     featured: true,
-    amenities: ['Kitchenette', 'Dining Counter', 'Microwave', 'High-Speed Wi-Fi', 'Smart TV', 'Workspace Desk', 'Iron & Board', 'Air Conditioning'],
+    amenities: ['Private Bathroom', 'Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'Workspace Desk', 'In-room Safe'],
     images: [
-      '/assets/rooms/studio-1.jpg',
-      '/assets/rooms/studio-2.jpg'
+      '/assets/rooms/apt-201-1.jpg',
+      '/assets/rooms/apt-201-2.jpg'
     ]
   },
   {
     id: '4',
-    name: 'Classic Queen Room',
-    slug: 'classic-queen-room',
-    description: 'A cozy and beautifully appointed room overlooking the courtyard, offering excellent value and complete comfort.',
-    detailedDescription: 'Our Classic Queen Room represents the perfect balance of premium comfort and exceptional value. Featuring Warm Cream and Soft Gold accents, this room features a comfortable queen-size bed, a private ensuite bathroom with local organic toiletries, and a view of the central cobblestone courtyard. It is an ideal peaceful retreat after a day of sightseeing or work.',
-    price: 35000,
+    name: 'Apt 202 — 2nd Floor Right',
+    slug: 'apt-202-second-floor-right',
+    description: 'Well-appointed apartment on the second floor, right wing. Tasteful furnishings, natural light, and all the comforts of home.',
+    detailedDescription: 'Apartment 202 is a well-furnished second-floor unit, right side. Features include a queen-sized bed, private en-suite bathroom, kitchenette, air conditioning, and high-speed Wi-Fi. The bright and airy layout makes it a popular choice for couples and solo business travelers alike.',
+    price: 40000,
     capacity: 2,
-    size: 28,
+    size: 32,
     bedType: '1 Queen Size Bed',
-    view: 'Central Courtyard & Fountain',
-    rating: 4.6,
-    reviewsCount: 32,
-    featured: false,
-    amenities: ['Private Bathroom', 'High-Speed Wi-Fi', 'Smart TV', 'Coffee & Tea Setup', 'Courtyard View', 'Writing Desk', 'Premium Linens'],
+    view: 'Open City View',
+    rating: 4.7,
+    reviewsCount: 11,
+    featured: true,
+    amenities: ['Private Bathroom', 'Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'Workspace Desk', 'In-room Safe'],
     images: [
-      '/assets/rooms/classic-1.jpg',
-      '/assets/rooms/classic-2.jpg'
+      '/assets/rooms/apt-202-1.jpg',
+      '/assets/rooms/apt-202-2.jpg'
     ]
   },
   {
     id: '5',
-    name: 'Sunset View Double',
-    slug: 'sunset-view-double',
-    description: 'Spacious room featuring two double beds. Perfect for friends traveling together or families.',
-    detailedDescription: 'The Sunset View Double is a bright and airy room equipped with two premium double beds, making it ideal for group travelers or families. Large westward-facing windows flood the room with golden light during sunset, offering beautiful views of the vibrant Douala city landscape. Complete with a large closet, private bathroom, and interactive entertainment system.',
-    price: 55000,
-    capacity: 4,
-    size: 42,
-    bedType: '2 Double Beds',
-    view: 'Westward Landscape & Sunset',
-    rating: 4.7,
-    reviewsCount: 9,
-    featured: false,
-    amenities: ['Two Beds', 'Large Closet', 'High-Speed Wi-Fi', 'Smart TV', 'In-room Dining Table', 'Mini Fridge', 'Black-out Curtains'],
+    name: 'Apt 301 — 3rd Floor Left',
+    slug: 'apt-301-third-floor-left',
+    description: 'Top-floor apartment on the left wing with breathtaking elevated city views. Quiet, breezy, and fully equipped.',
+    detailedDescription: 'Apartment 301 sits at the top of the building on the left side, offering the best elevated views of the Douala cityscape. This spacious unit features a king-sized bed, private bathroom, full kitchenette, air conditioning, and high-speed Wi-Fi. The cool top-floor breezes add a natural comfort to your stay.',
+    price: 50000,
+    capacity: 2,
+    size: 38,
+    bedType: '1 King Size Bed',
+    view: 'Panoramic City View',
+    rating: 4.8,
+    reviewsCount: 18,
+    featured: true,
+    amenities: ['Private Bathroom', 'Full Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'Workspace Desk', 'Premium Linens'],
     images: [
-      '/assets/rooms/double-1.jpg',
-      '/assets/rooms/double-2.jpg'
+      '/assets/rooms/apt-301-1.jpg',
+      '/assets/rooms/apt-301-2.jpg'
     ]
   },
   {
     id: '6',
-    name: 'Royal Twin Suite',
-    slug: 'royal-twin-suite',
-    description: 'Sophisticated suite featuring twin beds and a separate living area, offering space and style.',
-    detailedDescription: 'Experience refined comfort in our Royal Twin Suite. Outfitted with two twin-size orthopedic beds, this suite boasts a separate living room area with cozy sofa seating, allowing for business meetings or relaxed social hours in privacy. High ceilings, large windows, and curated African art pieces complete this majestic space.',
-    price: 60000,
+    name: 'Apt 302 — 3rd Floor Right',
+    slug: 'apt-302-third-floor-right',
+    description: 'Premium top-floor apartment on the right wing. Elevated position, city panorama, and a luxuriously quiet atmosphere.',
+    detailedDescription: 'Apartment 302 is a premium top-floor apartment on the right side, offering stunning panoramic views and the peace of being on the highest floor. Equipped with a king-sized bed, private bathroom, full kitchenette, air conditioning, and high-speed Wi-Fi, this apartment provides everything you need for a premium, self-sufficient stay.',
+    price: 50000,
     capacity: 2,
-    size: 48,
-    bedType: '2 Twin Beds',
-    view: 'Garden & Skyline View',
+    size: 38,
+    bedType: '1 King Size Bed',
+    view: 'Panoramic Skyline View',
     rating: 4.8,
-    reviewsCount: 11,
-    featured: false,
-    amenities: ['Separate Living Room', 'Twin Beds', 'Sofa Lounge', 'High-Speed Wi-Fi', 'Smart TV', 'Premium Toiletries', 'Espresso Machine', 'Iron & Board'],
+    reviewsCount: 15,
+    featured: true,
+    amenities: ['Private Bathroom', 'Full Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'Workspace Desk', 'Premium Linens'],
     images: [
-      '/assets/rooms/twin-1.jpg',
-      '/assets/rooms/twin-2.jpg'
+      '/assets/rooms/apt-302-1.jpg',
+      '/assets/rooms/apt-302-2.jpg'
+    ]
+  },
+  {
+    id: '7',
+    name: 'VIP Apartment',
+    slug: 'vip-apartment',
+    description: 'Our finest offering. A luxuriously spacious VIP apartment with premium furnishings, exclusive amenities, and top-tier privacy.',
+    detailedDescription: 'The VIP Apartment at M&J Luxurious Guest House is our most exclusive unit. Featuring a king-sized premium bed, a large private bathroom with soaking tub, a fully equipped kitchenette, a separate lounge area with sofa seating, air conditioning, and ultra-fast Wi-Fi. Designed for guests who expect nothing short of excellence, this apartment offers unmatched comfort and privacy.',
+    price: 85000,
+    capacity: 3,
+    size: 65,
+    bedType: '1 King Size Premium Bed',
+    view: 'VIP Panoramic City View',
+    rating: 4.9,
+    reviewsCount: 22,
+    featured: true,
+    amenities: ['Private Bathroom', 'Soaking Tub', 'Full Kitchenette', 'Mini Fridge', 'Microwave', 'High-Speed Wi-Fi', 'Air Conditioning', 'Sofa Lounge', 'Workspace Desk', 'Premium Linens', 'In-room Safe', '24/7 Concierge'],
+    images: [
+      '/assets/rooms/vip-1.jpg',
+      '/assets/rooms/vip-2.jpg',
+      '/assets/rooms/vip-3.jpg'
     ]
   }
 ];
@@ -174,7 +194,7 @@ export const REVIEWS: Review[] = [
     location: 'Yaoundé, Cameroon',
     rating: 5,
     date: '2026-05-14',
-    comment: 'M&J Luxurious Guest House exceeded all expectations! The view of the Wouri River in the morning is breathtaking. The backup generator is flawless, and the Wi-Fi was fast enough for my Zoom calls. Will definitely stay here again on my next trip to Douala.',
+    comment: 'M&J Luxurious Apartment exceeded all expectations! The constant power and high-speed Wi-Fi were impressive. The backup generator is flawless, and the internet was fast enough for my Zoom calls. Will definitely stay here again on my next trip to Douala.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop'
   },
   {
@@ -183,7 +203,7 @@ export const REVIEWS: Review[] = [
     location: 'London, United Kingdom',
     rating: 5,
     date: '2026-06-02',
-    comment: 'A true oasis of peace in Douala. The Sage Garden Suite is wonderful, and stepping directly onto the green lawns in the morning was magical. The staff is exceptionally polite, helping us coordinate our business meetings and city tour. Very clean and safe.',
+    comment: 'A true oasis of peace in Douala. The apartment is wonderful and the space is perfect. The staff is exceptionally polite, helping us coordinate our business meetings and city tour. Very clean and safe.',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop'
   },
   {
@@ -192,7 +212,7 @@ export const REVIEWS: Review[] = [
     location: 'Douala, Cameroon',
     rating: 4,
     date: '2026-06-25',
-    comment: 'Very professional guest house. I stayed in the Deluxe Wouri Studio for a business trip. Having a kitchen was very convenient. The area is quiet, secure, and has very clean air. Highly recommended!',
+    comment: 'Very professional apartment. I stayed here for a business trip. Having a self-contained kitchenette was very convenient. The area is quiet, secure, and has very clean air. Highly recommended!',
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop'
   },
   {
@@ -201,7 +221,7 @@ export const REVIEWS: Review[] = [
     location: 'Garoua, Cameroon',
     rating: 5,
     date: '2026-07-08',
-    comment: 'Beautiful decor, comfortable beds, and a delicious breakfast. We booked the Wouri Penthouse, and the terrace views are simply unmatched in Douala. Checking in and paying via Mobile Money was smooth and fast.',
+    comment: 'Beautiful decor, comfortable beds, and a very well-equipped kitchenette. We booked the VIP Apartment, and it was simply unmatched in Douala. Checking in and paying via Mobile Money was smooth and fast.',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop'
   }
 ];
@@ -249,7 +269,7 @@ export const FAQS: FAQ[] = [
   {
     id: '1',
     category: 'Booking',
-    question: 'How do I confirm my booking at M&J Luxurious Guest House?',
+    question: 'How do I confirm my booking at M&J Luxurious Apartment?',
     answer: 'Bookings can be completed directly through our website booking system. Once you choose your dates and room, you can pay securely using MTN Mobile Money, Orange Money, or Credit Card. Your booking is confirmed instantly, and a PDF receipt/pass is sent to your email.'
   },
   {
@@ -262,13 +282,13 @@ export const FAQS: FAQ[] = [
     id: '3',
     category: 'Services',
     question: 'Do you have backup electricity and water supply?',
-    answer: 'Yes. To counter local utility outages, M&J Luxurious Guest House is equipped with a high-capacity, automatic-switch standby diesel generator and a private borehole water filtration system. You will enjoy uninterrupted power and clean water throughout your stay.'
+    answer: 'Yes. To counter local utility outages, M&J Luxurious Apartment is equipped with a high-capacity, automatic-switch standby diesel generator and a private borehole water filtration system. You will enjoy uninterrupted power and clean water throughout your stay.'
   },
   {
     id: '4',
     category: 'Services',
-    question: 'Is breakfast included in the room price?',
-    answer: 'Yes! A complimentary breakfast (choice of local Cameroonian breakfast, continental breakfast, or fresh tropical fruit platter) is included for all checked-in guests, served daily between 7:00 AM and 10:00 AM.'
+    question: 'Is there a restaurant or food service on-site?',
+    answer: 'No, we do not provide food service or breakfast. However, each apartment is equipped with a kitchenette including a mini-fridge and microwave for self-catering. There are excellent restaurants and eateries within walking distance in Bonamussadi, Douala.'
   },
   {
     id: '5',
@@ -279,7 +299,7 @@ export const FAQS: FAQ[] = [
   {
     id: '6',
     category: 'House Rules',
-    question: 'Are pets allowed in the suites?',
+    question: 'Are pets allowed in the apartments?',
     answer: 'To maintain a peaceful and allergen-free environment for all our guests, pets are generally not permitted on the premises. Service animals are accepted upon prior arrangement.'
   }
 ];
@@ -289,8 +309,8 @@ export const CONTACT_DETAILS = {
   city: 'Bonamussadi, Douala',
   country: 'Cameroon',
   phone: '+237 670 123 456',
-  whatsapp: 'https://wa.me/237670123456?text=Hello%20M%26J%20Luxurious%20Guest%20House%2C%20I%27d%20like%20to%20inquire%20about%20booking%20a%20room.',
-  email: 'reservations@mjluxuriousguesthouse.com',
+  whatsapp: 'https://wa.me/237670123456?text=Hello%20M%26J%20Luxurious%20Apartment%2C%20I%27d%20like%20to%20inquire%20about%20booking%20an%20apartment.',
+  email: 'reservations@mjluxuriousapartment.com',
   workingHours: 'Front Desk: 24/7 | Reservations Office: 8:00 AM - 8:00 PM',
 };
 

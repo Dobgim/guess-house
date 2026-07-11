@@ -8,7 +8,7 @@ import type { Room } from '../data/mockData';
 import { ROOMS } from '../data/mockData';
 import { useBooking } from '../context/BookingContext';
 
-const ROOM_TYPES = ['All', 'Suite', 'Studio', 'Room'];
+const ROOM_TYPES = ['All', 'VIP', '1st Floor', '2nd Floor', '3rd Floor'];
 
 export const Rooms: React.FC = () => {
   const [filter, setFilter] = useState({ type: 'All', maxPrice: 100000, minGuests: 1 });
@@ -29,10 +29,10 @@ export const Rooms: React.FC = () => {
       <section id="rooms-header" className="bg-charcoal pt-10 pb-16 text-center">
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Accommodations</p>
         <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">
-          Our Luxury Suites
+          Our Apartments
         </h1>
         <p className="text-cream-dark/70 max-w-xl mx-auto leading-relaxed mb-10">
-          Choose from six beautifully appointed suites and rooms, each with unique character and mountain views.
+          Choose from seven beautifully appointed apartments, each floor offering left and right units plus a VIP apartment.
         </p>
         <div className="max-w-4xl mx-auto px-4">
           <BookingWidget />
@@ -93,12 +93,12 @@ export const Rooms: React.FC = () => {
 
           {/* Results Count */}
           <p className="text-charcoal-light text-sm mb-6">
-            Showing <strong className="text-charcoal">{filtered.length}</strong> {filtered.length === 1 ? 'suite' : 'suites'} available
+            Showing <strong className="text-charcoal">{filtered.length}</strong> {filtered.length === 1 ? 'apartment' : 'apartments'} available
           </p>
 
           {filtered.length === 0 ? (
             <div className="text-center py-20 text-charcoal-light">
-              <p className="font-serif text-2xl mb-3">No suites match your filters</p>
+              <p className="font-serif text-2xl mb-3">No apartments match your filters</p>
               <button onClick={() => setFilter({ type: 'All', maxPrice: 100000, minGuests: 1 })} className="text-gold underline">
                 Clear Filters
               </button>
@@ -169,7 +169,7 @@ export const Rooms: React.FC = () => {
                   onClick={() => { selectRoom(quickView.id); setQuickView(null); }}
                   className="flex items-center gap-2 bg-gold hover:bg-gold-dark text-cream-light px-6 py-3 rounded-xl font-semibold text-sm shadow transition-all"
                 >
-                  Book This Suite <ArrowRight className="w-4 h-4" />
+                  Book This Apartment <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

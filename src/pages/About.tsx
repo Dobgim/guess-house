@@ -22,9 +22,9 @@ export const About: React.FC = () => (
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 60% 50%, rgba(197,168,128,0.5) 0%, transparent 60%)' }} />
       <div className="relative z-10">
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Our Story</p>
-        <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">About M&J Luxurious Guest House</h1>
+        <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">About M&J Luxurious Apartment</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto leading-relaxed">
-          Born from a vision of elevated hospitality and local pride, M&J Luxurious Guest House is more than a guest house — it's an experience.
+          Born from a vision of elevated hospitality and local pride, M&J Luxurious Apartment is more than just accommodation — it's an experience.
         </p>
       </div>
     </section>
@@ -35,8 +35,8 @@ export const About: React.FC = () => (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="h-96 rounded-2xl bg-gradient-to-br from-stone-700 to-stone-900 flex items-end p-8 shadow-xl">
             <div>
-              <p className="font-serif text-cream-light/70 text-2xl italic mb-2">M&J Luxurious Guest House</p>
-              <p className="text-gold text-sm font-medium">Established 2018 · Douala, Cameroon</p>
+              <p className="font-serif text-cream-light/70 text-2xl italic mb-2">M&J Luxurious Apartment</p>
+              <p className="text-gold text-sm font-medium">Established 2024 · Douala, Cameroon</p>
             </div>
           </div>
           <div>
@@ -45,13 +45,13 @@ export const About: React.FC = () => (
               Built from Passion for Douala and its People
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-4">
-              M&J Luxurious Guest House was founded in 2018 by Marie & Jean Ngounou, Douala-born hospitality professionals who returned home after a decade of hotel management experience in Europe with a singular mission: to create a world-class retreat that celebrates the raw beauty and culture of Littoral Cameroon.
+              M&J Luxurious Apartment was founded in 2024 by Marie & Jean Ngounou, Douala-born hospitality professionals who returned home with a singular mission: to create a world-class retreat that celebrates the raw beauty and culture of Littoral Cameroon.
             </p>
             <p className="text-charcoal-light leading-relaxed mb-6">
-              Built from locally sourced materials and decorated with artisan crafts from Bafang and Foumban, the guest house blends contemporary comfort with authentic Cameroonian soul. The result is a sanctuary where every corner tells a story.
+              Built with quality materials and decorated with artisan crafts from Bafang and Foumban, the apartment blends contemporary comfort with authentic Cameroonian soul. The result is a sanctuary where every corner tells a story.
             </p>
             <Link to="/rooms" className="inline-flex items-center gap-2 text-gold hover:text-gold-dark font-medium border-b border-gold/50 hover:border-gold transition-all">
-              Explore Our Suites <ArrowRight className="w-4 h-4" />
+              Explore Our Apartments <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -78,7 +78,7 @@ export const About: React.FC = () => (
     {/* Team */}
     <section id="team" className="py-20 bg-charcoal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">The People Behind M&J Luxurious Guest House</p>
+        <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">The People Behind M&J Luxurious Apartment</p>
         <h2 className="font-serif text-4xl font-semibold text-cream-light mb-12">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {TEAM.map((member) => (

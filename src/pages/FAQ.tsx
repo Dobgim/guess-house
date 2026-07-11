@@ -19,7 +19,7 @@ export const FAQ: React.FC = () => {
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Help Center</p>
         <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">Frequently Asked Questions</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto">
-          Everything you need to know about staying at M&J Luxurious Guest House. Can't find your answer? Contact us directly.
+          Everything you need to know about staying at M&J Luxurious Apartment. Can't find your answer? Contact us directly.
         </p>
       </section>
 

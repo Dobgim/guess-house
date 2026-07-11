@@ -1,19 +1,16 @@
 import React from 'react';
-import { Wifi, Zap, Wind, Coffee, ShieldCheck, Car, Utensils, Droplets, Tv, Lock, Trees, Clock } from 'lucide-react';
+import { Wifi, Zap, Wind, ShieldCheck, Car, Droplets, Lock, Clock, UtensilsCrossed } from 'lucide-react';
 import { Layout } from '../components/Layout';
 
 const AMENITIES = [
   { icon: <Wifi className="w-8 h-8" />, name: '100 Mbps Fibre Wi-Fi', desc: 'Blazing-fast internet coverage throughout the entire property.' },
   { icon: <Zap className="w-8 h-8" />, name: 'Constant Power', desc: 'Auto-switch diesel generator ensures zero power interruptions.' },
   { icon: <Droplets className="w-8 h-8" />, name: 'Borehole Water', desc: 'Private filtered borehole water — clean, safe, and always available.' },
-  { icon: <Coffee className="w-8 h-8" />, name: 'Daily Breakfast', desc: 'Complimentary continental or local Cameroonian breakfast daily.' },
   { icon: <ShieldCheck className="w-8 h-8" />, name: '24/7 Security', desc: 'Trained security guards plus CCTV monitoring of all entry points.' },
   { icon: <Car className="w-8 h-8" />, name: 'Private Parking', desc: 'Secured private parking space available for all guests on-site.' },
-  { icon: <Wind className="w-8 h-8" />, name: 'Air Conditioning', desc: 'Individual climate control units in every room and suite.' },
-  { icon: <Tv className="w-8 h-8" />, name: 'Smart TV / DSTV', desc: 'Large Smart TV with DSTV Premium in each room for premium viewing.' },
-  { icon: <Utensils className="w-8 h-8" />, name: 'Room Service', desc: 'In-room dining available from 7 AM to 10 PM. Breakfast served in lounge.' },
-  { icon: <Lock className="w-8 h-8" />, name: 'Electronic Room Lock', desc: 'Contactless key card access to each suite for enhanced security.' },
-  { icon: <Trees className="w-8 h-8" />, name: 'Garden Lounge', desc: 'Manicured tropical garden with seating areas and city/river views.' },
+  { icon: <Wind className="w-8 h-8" />, name: 'Air Conditioning', desc: 'Individual climate control units in every apartment.' },
+  { icon: <Lock className="w-8 h-8" />, name: 'Electronic Door Lock', desc: 'Contactless key card access to each apartment for enhanced security.' },
+  { icon: <UtensilsCrossed className="w-8 h-8" />, name: 'Self-Catering Kitchen', desc: 'Each apartment includes a kitchenette with mini-fridge and microwave for self-catering.' },
   { icon: <Clock className="w-8 h-8" />, name: '24/7 Front Desk', desc: 'Our concierge team is available around the clock for all requests.' },
 ];
 

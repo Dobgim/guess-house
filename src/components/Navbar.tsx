@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Suites', path: '/rooms' },
+    { name: 'Apartments', path: '/rooms' },
     { name: 'Amenities', path: '/amenities' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Location', path: '/location' },
@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
               M&J <span className="text-gold">LUXURIOUS</span>
             </span>
             <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-              Guest House
+              Apartment
             </span>
           </Link>
 
@@ -184,7 +184,7 @@ export const Navbar: React.FC = () => {
             className="w-full flex items-center justify-center gap-2 py-3 bg-gold text-cream-light font-medium rounded hover:bg-gold-dark shadow transition-all"
           >
             <Calendar className="w-4 h-4" />
-            <span>Book A Suite Now</span>
+            <span>Book An Apartment Now</span>
           </button>
         </div>
       </div>

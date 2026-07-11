@@ -27,11 +27,11 @@ export const Footer: React.FC = () => {
                 M&J <span className="text-gold">LUXURIOUS</span>
               </span>
               <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-                Guest House
+                Apartment
               </span>
             </Link>
             <p className="text-sm text-cream-dark/70 leading-relaxed pt-2">
-              Located in the prestigious neighborhood of Bonamussadi, Douala, M&J Luxurious Guest House combines modern luxury with premium hospitality. Your sanctuary in Douala.
+              Located in the prestigious neighborhood of Bonamussadi, Douala, M&J Luxurious Apartment combines modern luxury with premium hospitality. Your sanctuary in Douala.
             </p>
             <div className="flex items-center space-x-4 pt-2">
               <a href="#" className="text-cream-dark hover:text-gold transition-colors" aria-label="Instagram">
@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link to="/rooms" className="hover:text-gold transition-colors">Our Luxury Suites</Link>
+                <Link to="/rooms" className="hover:text-gold transition-colors">Our Luxury Apartments</Link>
               </li>
               <li>
                 <Link to="/amenities" className="hover:text-gold transition-colors">Premium Amenities</Link>
@@ -138,7 +138,7 @@ export const Footer: React.FC = () => {
 
         {/* Divider & Copyright */}
         <div className="border-t border-gold/15 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-cream-dark/50">
-          <p>&copy; {new Date().getFullYear()} M&J Luxurious Guest House. All rights reserved.</p>
+          <p>&copy; 2024 M&J Luxurious Apartment. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>

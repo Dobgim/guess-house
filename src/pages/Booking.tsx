@@ -6,7 +6,7 @@ import { useBooking } from '../context/BookingContext';
 import type { Booking as BookingRecord } from '../context/BookingContext';
 import { ROOMS } from '../data/mockData';
 
-const STEPS = ['Select Suite', 'Guest Details', 'Payment', 'Confirmation'];
+const STEPS = ['Select Apartment', 'Guest Details', 'Payment', 'Confirmation'];
 
 const calculateNights = (inStr: string, outStr: string) => {
   const d1 = new Date(inStr);
@@ -45,7 +45,7 @@ export const Booking: React.FC = () => {
     <Layout>
       {/* Header */}
       <section id="booking-header" className="bg-charcoal pt-10 pb-12 text-center">
-        <h1 className="font-serif text-4xl font-semibold text-cream-light mb-2">Reserve Your Suite</h1>
+        <h1 className="font-serif text-4xl font-semibold text-cream-light mb-2">Reserve Your Apartment</h1>
         <p className="text-cream-dark/60 text-sm">Complete your booking in just 3 simple steps</p>
       </section>
 
@@ -74,7 +74,7 @@ export const Booking: React.FC = () => {
             {/* ── STEP 0: Select Suite ── */}
             {step === 0 && (
               <div id="step-select" className="space-y-6">
-                <h2 className="font-serif text-2xl font-semibold text-charcoal">Choose Your Suite & Dates</h2>
+                <h2 className="font-serif text-2xl font-semibold text-charcoal">Choose Your Apartment & Dates</h2>
 
                 {/* Dates */}
                 <div className="bg-cream-light border border-gold/15 rounded-2xl p-5 space-y-4">
@@ -103,7 +103,7 @@ export const Booking: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Suite Selection */}
+                {/* Apartment Selection */}
                 <div className="space-y-3">
                   {ROOMS.map((room) => (
                     <label
@@ -268,7 +268,7 @@ export const Booking: React.FC = () => {
                   </div>
                   <div className="border-t border-gold/15 mt-5 pt-5 grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <p className="text-xs text-charcoal-light mb-0.5">Suite</p>
+                      <p className="text-xs text-charcoal-light mb-0.5">Apartment</p>
                       <p className="font-semibold text-charcoal">{confirmedBooking.room.name}</p>
                     </div>
                     <div>
@@ -316,7 +316,7 @@ export const Booking: React.FC = () => {
                 {selectedRoom ? (
                   <div className="space-y-3 text-sm">
                     <div>
-                      <p className="text-charcoal-light text-xs mb-0.5">Selected Suite</p>
+                      <p className="text-charcoal-light text-xs mb-0.5">Selected Apartment</p>
                       <p className="font-semibold text-charcoal">{selectedRoom.name}</p>
                     </div>
                     <div className="grid grid-cols-2 gap-2 text-xs">
@@ -334,7 +334,7 @@ export const Booking: React.FC = () => {
                     </div>
                     <div className="flex gap-1 items-center">
                       <Star className="w-3 h-3 fill-gold text-gold" />
-                      <span className="text-xs text-charcoal-light">{selectedRoom.rating} rating · Free breakfast included</span>
+                      <span className="text-xs text-charcoal-light">{selectedRoom.rating} rating</span>
                     </div>
                     <div className="border-t border-gold/15 pt-3 flex justify-between font-bold text-charcoal">
                       <span>Total</span>
@@ -342,7 +342,7 @@ export const Booking: React.FC = () => {
                     </div>
                   </div>
                 ) : (
-                  <p className="text-charcoal-light text-sm">Select a suite to see pricing.</p>
+                  <p className="text-charcoal-light text-sm">Select an apartment to see pricing.</p>
                 )}
               </div>
             </div>

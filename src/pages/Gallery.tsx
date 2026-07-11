@@ -18,7 +18,7 @@ const GALLERY_ITEMS = [
   { id: '12', label: 'Royal Twin Suite — Living Room', category: 'Suites', gradient: 'from-indigo-700 to-indigo-900' },
 ];
 
-const CATEGORIES = ['All', 'Suites', 'Views', 'Gardens', 'Common Areas', 'Dining'];
+const CATEGORIES = ['All', 'Apartments', 'Views', 'Common Areas'];
 
 export const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -40,7 +40,7 @@ export const Gallery: React.FC = () => {
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Visual Tour</p>
         <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">Photo Gallery</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto leading-relaxed">
-          Step inside M&J Luxurious Guest House through our gallery. Explore our suites, gardens, and breathtaking river views.
+          Step inside M&J Luxurious Apartment through our gallery. Explore our apartments and breathtaking city views.
         </p>
       </section>
 

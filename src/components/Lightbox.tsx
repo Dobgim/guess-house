@@ -107,7 +107,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
               className={`w-full h-[60vh] rounded-xl bg-gradient-to-br ${grad} flex items-end justify-center shadow-2xl border border-gold/15 overflow-hidden`}
             >
               <div className="p-6 text-center">
-                <p className="font-serif text-cream-light/70 text-2xl italic">M&J Luxurious Guest House</p>
+                <p className="font-serif text-cream-light/70 text-2xl italic">M&J Luxurious Apartment</p>
                 <p className="text-cream-light/50 text-sm mt-1">Gallery Image {currentIndex + 1}</p>
               </div>
             </div>
