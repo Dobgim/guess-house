@@ -4,13 +4,13 @@ import { Lightbox } from '../components/Lightbox';
 import { ZoomIn } from 'lucide-react';
 
 const GALLERY_ITEMS = [
-  { id: '1', label: 'Executive Fako Penthouse — Living Area', category: 'Suites', gradient: 'from-stone-700 to-stone-900' },
-  { id: '2', label: 'Penthouse Private Terrace & Mountain View', category: 'Views', gradient: 'from-slate-700 to-slate-900' },
+  { id: '1', label: 'Executive Wouri Penthouse — Living Area', category: 'Suites', gradient: 'from-stone-700 to-stone-900' },
+  { id: '2', label: 'Penthouse Private Terrace & River View', category: 'Views', gradient: 'from-slate-700 to-slate-900' },
   { id: '3', label: 'Sage Garden Suite — Garden Access Doors', category: 'Suites', gradient: 'from-emerald-800 to-emerald-950' },
   { id: '4', label: 'Tropical Garden & Seating Area', category: 'Gardens', gradient: 'from-green-800 to-green-950' },
-  { id: '5', label: 'Deluxe Mountain Studio — Kitchen & Desk', category: 'Suites', gradient: 'from-amber-800 to-amber-950' },
+  { id: '5', label: 'Deluxe Wouri Studio — Kitchen & Desk', category: 'Suites', gradient: 'from-amber-800 to-amber-950' },
   { id: '6', label: 'Classic Queen Room — Courtyard View', category: 'Suites', gradient: 'from-yellow-700 to-yellow-900' },
-  { id: '7', label: 'Mount Cameroon Sunrise from Penthouse Terrace', category: 'Views', gradient: 'from-purple-800 to-purple-950' },
+  { id: '7', label: 'Wouri River Sunrise from Penthouse Terrace', category: 'Views', gradient: 'from-purple-800 to-purple-950' },
   { id: '8', label: 'Courtyard Fountain & Cobblestone Pathway', category: 'Common Areas', gradient: 'from-rose-700 to-rose-900' },
   { id: '9', label: 'Sunset View Double — Beds & Decor', category: 'Suites', gradient: 'from-orange-700 to-orange-900' },
   { id: '10', label: 'Reception & Welcome Lobby', category: 'Common Areas', gradient: 'from-teal-800 to-teal-950' },
@@ -40,7 +40,7 @@ export const Gallery: React.FC = () => {
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Visual Tour</p>
         <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">Photo Gallery</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto leading-relaxed">
-          Step inside La Villa Rielle through our gallery. Explore our suites, gardens, and breathtaking mountain views.
+          Step inside M&J Luxurious Guest House through our gallery. Explore our suites, gardens, and breathtaking river views.
         </p>
       </section>
 

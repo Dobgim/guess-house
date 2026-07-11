@@ -57,7 +57,7 @@ export const Home: React.FC = () => {
             className="mb-6 inline-flex items-center gap-2 bg-gold/15 border border-gold/30 text-gold px-4 py-1.5 rounded-full text-sm font-medium"
           >
             <Star className="w-3.5 h-3.5 fill-gold" />
-            Buea's Most Treasured Luxury Retreat
+            Douala's Most Treasured Luxury Retreat
           </motion.div>
 
           <motion.h1
@@ -67,7 +67,7 @@ export const Home: React.FC = () => {
             variants={fadeUp}
             className="font-serif text-5xl md:text-7xl font-bold text-cream-light leading-tight mb-4 tracking-tight"
           >
-            La Villa <span className="text-gold italic">Rielle</span>
+            M&J Luxurious <span className="text-gold italic">Guest House</span>
           </motion.h1>
 
           <motion.p
@@ -77,7 +77,7 @@ export const Home: React.FC = () => {
             variants={fadeUp}
             className="text-cream-dark/80 text-lg md:text-xl max-w-2xl leading-relaxed mb-12 font-light"
           >
-            A sanctuary of elegance at the misty foothills of Mount Cameroon. Experience world-class suites, breathtaking views, and personalized hospitality — all in the heart of Buea.
+            A sanctuary of elegance in Bonamussadi. Experience world-class suites, breathtaking Wouri River views, and personalized hospitality — all in the heart of Douala.
           </motion.p>
 
           {/* Booking Widget */}
@@ -127,7 +127,7 @@ export const Home: React.FC = () => {
               Signature Suites
             </h2>
             <p className="text-charcoal-light max-w-xl mx-auto leading-relaxed">
-              Each suite is thoughtfully designed to evoke comfort, elegance, and the natural beauty of Southwest Cameroon.
+              Each suite is thoughtfully designed to evoke comfort, elegance, and the natural beauty of Littoral Cameroon.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
@@ -156,25 +156,25 @@ export const Home: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
                 <div className="text-center">
                   <p className="font-serif text-cream-light/60 text-3xl italic mb-2">Our Story</p>
-                  <p className="text-gold/60 text-sm">Est. 2018 • Buea, Cameroon</p>
+                  <p className="text-gold/60 text-sm">Est. 2018 • Douala, Cameroon</p>
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-charcoal/60 to-transparent" />
               <div className="absolute bottom-6 left-6 bg-gold/90 text-cream-light px-4 py-2 rounded-xl text-sm font-semibold shadow-lg">
-                Est. 2018 • Buea, Cameroon
+                Est. 2018 • Douala, Cameroon
               </div>
             </div>
             {/* Text */}
             <div className="order-1 lg:order-2">
               <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">Our Story</p>
               <h2 className="font-serif text-4xl font-semibold text-cream-light mb-6 leading-tight">
-                Where Mount Cameroon Meets <span className="text-gold italic">Timeless Elegance</span>
+                Where Coastal Luxury Meets <span className="text-gold italic">Timeless Elegance</span>
               </h2>
               <p className="text-cream-dark/75 leading-relaxed mb-4">
-                Opened in 2018 and nestled at 1,000m altitude in the cool highlands of Buea, La Villa Rielle was built with one purpose — to provide an authentic premium experience in the heart of Southwest Cameroon.
+                Opened in 2018 in the prestigious neighborhood of Bonamussadi, M&J Luxurious Guest House was built with one purpose — to provide an authentic premium experience in the heart of Douala, Littoral Cameroon.
               </p>
               <p className="text-cream-dark/75 leading-relaxed mb-8">
-                Each architectural detail, from the handcrafted bamboo furniture to the open terraces overlooking the volcano, reflects our deep pride in local culture and our commitment to world-class comfort.
+                Each architectural detail, from the handcrafted premium woodwork to the open terraces overlooking the Wouri River, reflects our deep pride in local culture and our commitment to world-class comfort.
               </p>
               <Link
                 id="learn-more-about"
@@ -300,7 +300,7 @@ export const Home: React.FC = () => {
             Ready for an Unforgettable Stay?
           </h2>
           <p className="text-cream-light/85 mb-8 text-lg font-light leading-relaxed">
-            Reserve your suite today and experience the finest hospitality in Buea, Cameroon.
+            Reserve your suite today and experience the finest hospitality in Douala, Cameroon.
           </p>
           <Link
             id="cta-book-suite"

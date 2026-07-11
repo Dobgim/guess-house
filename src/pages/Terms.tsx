@@ -21,13 +21,13 @@ export const Terms: React.FC = () => (
           <li>No-shows will be charged in full.</li>
         </ul>
         <h2>4. Guest Conduct</h2>
-        <p>Guests are expected to respect the property, neighbors, and other guests. La Villa Rielle reserves the right to request immediate departure without refund in cases of unruly behavior, damage to property, or violation of these terms.</p>
+        <p>Guests are expected to respect the property, neighbors, and other guests. M&J Luxurious Guest House reserves the right to request immediate departure without refund in cases of unruly behavior, damage to property, or violation of these terms.</p>
         <h2>5. Liability</h2>
-        <p>La Villa Rielle is not responsible for loss of personal belongings, cash, or valuables. We recommend using the in-room safe or our front desk safekeeping service.</p>
+        <p>M&J Luxurious Guest House is not responsible for loss of personal belongings, cash, or valuables. We recommend using the in-room safe or our front desk safekeeping service.</p>
         <h2>6. Modifications</h2>
         <p>We reserve the right to modify these Terms & Conditions at any time. Changes will be posted on our website and take effect immediately upon publication.</p>
         <h2>7. Governing Law</h2>
-        <p>These terms shall be governed by the laws of the Republic of Cameroon. Disputes will be subject to the jurisdiction of the courts of Buea, Southwest Region.</p>
+        <p>These terms shall be governed by the laws of the Republic of Cameroon. Disputes will be subject to the jurisdiction of the courts of Douala, Littoral Region.</p>
       </div>
     </section>
   </Layout>

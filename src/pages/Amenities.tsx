@@ -13,7 +13,7 @@ const AMENITIES = [
   { icon: <Tv className="w-8 h-8" />, name: 'Smart TV / DSTV', desc: 'Large Smart TV with DSTV Premium in each room for premium viewing.' },
   { icon: <Utensils className="w-8 h-8" />, name: 'Room Service', desc: 'In-room dining available from 7 AM to 10 PM. Breakfast served in lounge.' },
   { icon: <Lock className="w-8 h-8" />, name: 'Electronic Room Lock', desc: 'Contactless key card access to each suite for enhanced security.' },
-  { icon: <Trees className="w-8 h-8" />, name: 'Garden Lounge', desc: 'Manicured tropical garden with seating areas and mountain views.' },
+  { icon: <Trees className="w-8 h-8" />, name: 'Garden Lounge', desc: 'Manicured tropical garden with seating areas and city/river views.' },
   { icon: <Clock className="w-8 h-8" />, name: '24/7 Front Desk', desc: 'Our concierge team is available around the clock for all requests.' },
 ];
 
@@ -23,7 +23,7 @@ export const Amenities: React.FC = () => (
       <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">What's Included</p>
       <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">Premium Amenities</h1>
       <p className="text-cream-dark/65 max-w-xl mx-auto leading-relaxed">
-        Every amenity has been selected to ensure your stay in Buea is as comfortable, safe, and enjoyable as possible.
+        Every amenity has been selected to ensure your stay in Douala is as comfortable, safe, and enjoyable as possible.
       </p>
     </section>
 
@@ -50,7 +50,7 @@ export const Amenities: React.FC = () => (
         <div className="mt-12 bg-charcoal rounded-2xl p-6 text-center border border-gold/20">
           <p className="text-gold font-serif text-lg font-semibold mb-2">All Amenities Included in Your Stay</p>
           <p className="text-cream-dark/70 text-sm">
-            No hidden charges. Every amenity listed above is complimentary for all guests during their stay at La Villa Rielle.
+            No hidden charges. Every amenity listed above is complimentary for all guests during their stay at M&J Luxurious Guest House.
           </p>
         </div>
       </div>

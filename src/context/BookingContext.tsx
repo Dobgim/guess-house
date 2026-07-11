@@ -67,7 +67,7 @@ export const BookingProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
   // Load bookings from localStorage on mount
   useEffect(() => {
-    const saved = localStorage.getItem('lavillarielle_bookings');
+    const saved = localStorage.getItem('mjguesthouse_bookings');
     if (saved) {
       try {
         setBookings(JSON.parse(saved));
@@ -117,7 +117,7 @@ export const BookingProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
     const nights = calculateNights(checkIn, checkOut);
     const totalPrice = selectedRoom.price * nights;
-    const bookingId = 'VR-' + Math.floor(100000 + Math.random() * 900000);
+    const bookingId = 'MJ-' + Math.floor(100000 + Math.random() * 900000);
 
     const newBooking: Booking = {
       id: bookingId,
@@ -129,12 +129,12 @@ export const BookingProvider: React.FC<{ children: React.ReactNode }> = ({ child
       guestDetails: billingDetails,
       status: 'CONFIRMED', // Simulated immediate confirmation for user demonstration
       createdAt: new Date().toISOString(),
-      qrCodeValue: `LVR-VERIFY-${bookingId}-${selectedRoom.id}-${checkIn}`,
+      qrCodeValue: `MJ-VERIFY-${bookingId}-${selectedRoom.id}-${checkIn}`,
     };
 
     const updatedBookings = [newBooking, ...bookings];
     setBookings(updatedBookings);
-    localStorage.setItem('lavillarielle_bookings', JSON.stringify(updatedBookings));
+    localStorage.setItem('mjguesthouse_bookings', JSON.stringify(updatedBookings));
     setCurrentBooking(newBooking);
 
     return newBooking;

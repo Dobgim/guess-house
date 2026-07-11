@@ -24,14 +24,14 @@ export const Footer: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className="flex flex-col focus:outline-none">
               <span className="font-serif text-2xl font-semibold tracking-wider text-cream-light">
-                LA VILLA <span className="text-gold">RIELLE</span>
+                M&J <span className="text-gold">LUXURIOUS</span>
               </span>
               <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-                Luxury Guest House
+                Guest House
               </span>
             </Link>
             <p className="text-sm text-cream-dark/70 leading-relaxed pt-2">
-              Nestled at the misty foothills of Mount Cameroon, La Villa Rielle combines modern luxury with premium hospitality. Your sanctuary in Buea, Southwest Region.
+              Located in the prestigious neighborhood of Bonamussadi, Douala, M&J Luxurious Guest House combines modern luxury with premium hospitality. Your sanctuary in Douala.
             </p>
             <div className="flex items-center space-x-4 pt-2">
               <a href="#" className="text-cream-dark hover:text-gold transition-colors" aria-label="Instagram">
@@ -138,7 +138,7 @@ export const Footer: React.FC = () => {
 
         {/* Divider & Copyright */}
         <div className="border-t border-gold/15 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-cream-dark/50">
-          <p>&copy; {new Date().getFullYear()} La Villa Rielle. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} M&J Luxurious Guest House. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-gold transition-colors">Terms of Service</Link>

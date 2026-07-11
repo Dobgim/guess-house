@@ -16,11 +16,11 @@ export const PrivacyPolicy: React.FC = () => (
         <h2>3. Data Security</h2>
         <p>We implement industry-standard security measures including SSL encryption, secure payment gateways, and restricted access to personal data. We never sell your personal information to third parties.</p>
         <h2>4. Your Rights</h2>
-        <p>You have the right to access, correct, or delete the personal data we hold about you. To exercise these rights, contact us at privacy@lavillarielle.com.</p>
+        <p>You have the right to access, correct, or delete the personal data we hold about you. To exercise these rights, contact us at privacy@mjluxuriousguesthouse.com.</p>
         <h2>5. Cookies</h2>
         <p>Our website uses cookies to improve your browsing experience and analyze site usage. You may disable cookies in your browser settings, though this may affect certain features.</p>
         <h2>6. Contact</h2>
-        <p>For privacy-related enquiries, email us at <a href="mailto:privacy@lavillarielle.com" className="text-gold">privacy@lavillarielle.com</a> or write to us at our Buea address.</p>
+        <p>For privacy-related enquiries, email us at <a href="mailto:privacy@mjluxuriousguesthouse.com" className="text-gold">privacy@mjluxuriousguesthouse.com</a> or write to us at our Douala address.</p>
       </div>
     </section>
   </Layout>

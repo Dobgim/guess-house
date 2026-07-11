@@ -4,8 +4,8 @@ import { ArrowRight, Award, Heart, Leaf } from 'lucide-react';
 import { Layout } from '../components/Layout';
 
 const TEAM = [
-  { name: 'Rielle Ngounou', role: 'Founder & Managing Director', initial: 'R' },
-  { name: 'Bongani Mbeki', role: 'Head Chef & Culinary Director', initial: 'B' },
+  { name: 'Marie Ngounou', role: 'Co-Founder & Director', initial: 'M' },
+  { name: 'Jean Ngounou', role: 'Co-Founder & Director', initial: 'J' },
   { name: 'Clarisse Fotso', role: 'Guest Relations Manager', initial: 'C' },
 ];
 
@@ -22,9 +22,9 @@ export const About: React.FC = () => (
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 60% 50%, rgba(197,168,128,0.5) 0%, transparent 60%)' }} />
       <div className="relative z-10">
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Our Story</p>
-        <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">About La Villa Rielle</h1>
+        <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">About M&J Luxurious Guest House</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto leading-relaxed">
-          Born from a vision of elevated hospitality and local pride, La Villa Rielle is more than a guest house — it's an experience.
+          Born from a vision of elevated hospitality and local pride, M&J Luxurious Guest House is more than a guest house — it's an experience.
         </p>
       </div>
     </section>
@@ -35,17 +35,17 @@ export const About: React.FC = () => (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="h-96 rounded-2xl bg-gradient-to-br from-stone-700 to-stone-900 flex items-end p-8 shadow-xl">
             <div>
-              <p className="font-serif text-cream-light/70 text-2xl italic mb-2">La Villa Rielle</p>
-              <p className="text-gold text-sm font-medium">Established 2018 · Buea, Cameroon</p>
+              <p className="font-serif text-cream-light/70 text-2xl italic mb-2">M&J Luxurious Guest House</p>
+              <p className="text-gold text-sm font-medium">Established 2018 · Douala, Cameroon</p>
             </div>
           </div>
           <div>
             <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-4">The Beginning</p>
             <h2 className="font-serif text-4xl font-semibold text-charcoal mb-6 leading-tight">
-              Built from Passion for Buea and its People
+              Built from Passion for Douala and its People
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-4">
-              La Villa Rielle was founded in 2018 by Rielle Ngounou, a Buea-born hospitality professional who returned home after a decade of hotel management experience in Europe with a singular mission: to create a world-class retreat that celebrates the raw beauty and culture of Southwest Cameroon.
+              M&J Luxurious Guest House was founded in 2018 by Marie & Jean Ngounou, Douala-born hospitality professionals who returned home after a decade of hotel management experience in Europe with a singular mission: to create a world-class retreat that celebrates the raw beauty and culture of Littoral Cameroon.
             </p>
             <p className="text-charcoal-light leading-relaxed mb-6">
               Built from locally sourced materials and decorated with artisan crafts from Bafang and Foumban, the guest house blends contemporary comfort with authentic Cameroonian soul. The result is a sanctuary where every corner tells a story.
@@ -78,7 +78,7 @@ export const About: React.FC = () => (
     {/* Team */}
     <section id="team" className="py-20 bg-charcoal">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">The People Behind La Villa Rielle</p>
+        <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">The People Behind M&J Luxurious Guest House</p>
         <h2 className="font-serif text-4xl font-semibold text-cream-light mb-12">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {TEAM.map((member) => (

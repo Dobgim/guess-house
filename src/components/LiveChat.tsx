@@ -21,7 +21,7 @@ export const LiveChat: React.FC = () => {
   const initialBotMessage = {
     id: 'init-1',
     sender: 'bot' as const,
-    text: "Hello! Welcome to La Villa Rielle. I am your digital concierge. How can I assist you with your stay in Buea today?",
+    text: "Hello! Welcome to M&J Luxurious Guest House. I am your digital concierge. How can I assist you with your stay in Douala today?",
     timestamp: new Date(),
   };
 
@@ -49,18 +49,18 @@ export const LiveChat: React.FC = () => {
       return `Our current room rates per night are:\n• ${roomPrices}\n\nAll bookings include a complementary breakfast!`;
     }
     if (text.includes('power') || text.includes('light') || text.includes('electricity') || text.includes('generator') || text.includes('outage')) {
-      return "Yes! La Villa Rielle is equipped with a high-capacity, automatic-switch standby diesel generator and a private water borehole system. You will enjoy 100% constant power, heating, and water throughout your stay.";
+      return "Yes! M&J Luxurious Guest House is equipped with a high-capacity, automatic-switch standby diesel generator and a private water borehole system. You will enjoy 100% constant power, heating, and water throughout your stay.";
     }
     if (text.includes('book') || text.includes('reserve') || text.includes('payment') || text.includes('checkout')) {
       return "You can book directly on our website! Browse our Suites page, choose your dates, fill in your guest details, and complete payment securely via MTN Mobile Money, Orange Money, or Credit Card. You will receive an instant confirmation ticket.";
     }
     if (text.includes('attraction') || text.includes('visit') || text.includes('nearby') || text.includes('mountain') || text.includes('beach')) {
-      return "We are ideally located close to the Mount Cameroon Peak Trail starting point (3.5 km). Limbe Black Sand Beaches and Botanical Gardens are only about 25 km away (a 30-minute drive). You can explore details on our Location page!";
+      return "We are ideally located close to the Wouri River & Bonabéri Bridge (8 km). Doual'art Gallery is only about 6 km away. You can explore details on our Location page!";
     }
     if (text.includes('hello') || text.includes('hi') || text.includes('hey') || text.includes('greetings')) {
-      return "Hi there! Feel free to ask me about room availability, rates, power backup systems, or location details in Buea.";
+      return "Hi there! Feel free to ask me about room availability, rates, power backup systems, or location details in Douala.";
     }
-    return "Thank you for reaching out! I'm best at answering questions about room rates, bookings, amenities (like our constant power generator), and local attractions in Buea. You can also chat directly with our front desk using the WhatsApp button on the bottom left.";
+    return "Thank you for reaching out! I'm best at answering questions about room rates, bookings, amenities (like our constant power generator), and local attractions in Douala. You can also chat directly with our front desk using the WhatsApp button on the bottom left.";
   };
 
   const handleSendMessage = (text: string) => {
@@ -128,7 +128,7 @@ export const LiveChat: React.FC = () => {
               <div className="flex flex-col">
                 <span className="font-serif text-sm font-semibold tracking-wide">Concierge Assistant</span>
                 <span className="text-[10px] text-sage font-medium flex items-center gap-1">
-                  <ShieldCheck className="w-3 h-3 text-[#25D366]" /> Online | La Villa Rielle
+                  <ShieldCheck className="w-3 h-3 text-[#25D366]" /> Online | M&J Luxurious Guest House
                 </span>
               </div>
             </div>

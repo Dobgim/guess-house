@@ -30,7 +30,7 @@ export const Reviews: React.FC = () => {
         <p className="text-gold text-sm font-semibold uppercase tracking-widest mb-3">Guest Feedback</p>
         <h1 className="font-serif text-5xl font-semibold text-cream-light mb-4">Guest Reviews</h1>
         <p className="text-cream-dark/65 max-w-xl mx-auto">
-          Authentic feedback from guests who have experienced La Villa Rielle firsthand.
+          Authentic feedback from guests who have experienced M&J Luxurious Guest House firsthand.
         </p>
       </section>
 
@@ -130,7 +130,7 @@ export const Reviews: React.FC = () => {
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs text-gold font-semibold uppercase tracking-wider">Your Review *</label>
                   <textarea required value={comment} onChange={(e) => setComment(e.target.value)}
-                    rows={4} placeholder="Share your experience at La Villa Rielle…"
+                    rows={4} placeholder="Share your experience at M&J Luxurious Guest House…"
                     className="bg-charcoal-light border border-gold/20 text-cream-light placeholder-cream-dark/40 px-4 py-2.5 rounded-xl focus:outline-none focus:border-gold text-sm resize-none" />
                 </div>
                 <button type="submit" id="submit-review-btn"

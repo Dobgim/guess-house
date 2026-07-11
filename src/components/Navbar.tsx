@@ -56,10 +56,10 @@ export const Navbar: React.FC = () => {
             onClick={() => setIsOpen(false)}
           >
             <span className="font-serif text-2xl font-semibold tracking-wider text-charcoal">
-              LA VILLA <span className="text-gold">RIELLE</span>
+              M&J <span className="text-gold">LUXURIOUS</span>
             </span>
             <span className="text-[9px] tracking-[0.25em] text-sage font-medium uppercase -mt-1">
-              Luxury Guest House
+              Guest House
             </span>
           </Link>
 
@@ -134,7 +134,7 @@ export const Navbar: React.FC = () => {
       >
         <div className="flex items-center justify-between border-b border-gold/15 pb-4 mb-6">
           <span className="font-serif text-xl font-semibold tracking-wider text-charcoal">
-            LA VILLA <span className="text-gold">RIELLE</span>
+            M&J <span className="text-gold">LUXURIOUS</span>
           </span>
           <button
             id="mobile-drawer-close"
